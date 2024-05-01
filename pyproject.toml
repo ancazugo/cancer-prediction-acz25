@@ -6,6 +6,11 @@ authors = ["Andrés Camilo Zúñiga-González <33363093+ancazugo@users.noreply.g
 license = "MIT"
 readme = "README.md"
 
+packages = [{include = "cancer_prediction"}]
+
+[tool.poetry.scripts]
+cancer-prediction =  "cancer_prediction.cli:app"
+
 [tool.poetry.dependencies]
 python = "^3.10"
 pandas = "2.2.1"
